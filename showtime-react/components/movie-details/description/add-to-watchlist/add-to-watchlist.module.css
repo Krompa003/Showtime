@@ -1,0 +1,28 @@
+.watchlist {
+  display: flex;
+  margin-top: 5px;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+}
+
+.watchlist:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.watchlist h4 {
+  font-size: 24px;
+  font-weight: 200;
+  color: var(--red);
+  margin-right: 10px;
+  position: relative;
+}
+
+.watchlist h4 img {
+  /* margin: 6px 0 0 3px; */
+  display: inline-block;
+  position: absolute;
+  /* top: 2px;
+  right: -22px; */
+}

@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1600;
+  position: sticky !important;
+  /* width: 100px; */
+  height: 90px;
+  padding: 10px;
+  align-items: center;
+  color: var(--red);
+  /* overflow: hidden; */
+}
+
+.header a {
+  color: var(--red) !important;
+  text-decoration: none;
+}
+
+.header .nav > a::after {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../../assets/images/watchRed.png);
+  /* transition: width 0.3s ease-in-out; */
+}
+
+.header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1300 !important;
+  /* width: fit-content;
+    height: fit-content; */
+}
+
+.nav .nav-item {
+  margin: 20px;
+}
+
+.watchlist img {
+  width: 18px;
+  height: 20px;
+  margin-left: 2px;
+  position: absolute;
+}
+
+/* .watchlist::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/images/watchRed.png);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.3s ease-in-out;
+} */
+
+.line {
+  position: fixed;
+  top: 87px;
+  left: 0;
+  height: 3px;
+  background-color: #e50914;
+  width: 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: collapse;
+    transition: all 0.3s;
+  }
+  .nav .nav-item {
+    display: none;
+    height: fit-content;
+  }
+  .showNav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(90px);
+    align-items: flex-start;
+    visibility: visible;
+    height: fit-content;
+    width: 100%;
+    /* z-index: 5500 !important; */
+  }
+  .showNav .nav-item {
+    display: block;
+  }
+}

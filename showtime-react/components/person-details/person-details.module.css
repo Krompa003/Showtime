@@ -1,0 +1,14 @@
+.cont {
+  margin: 20px auto;
+  padding: 0 12%;
+}
+
+.details {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .details {
+    flex-direction: column;
+  }
+}

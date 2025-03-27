@@ -1,0 +1,20 @@
+.input {
+  /* display: flex; */
+  gap: 5px;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+}
+
+.input:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.input input:hover {
+  cursor: pointer;
+}
+
+.input label:hover {
+  cursor: pointer;
+}
